@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/firacode/v14/uU9NCBoH6dDmhg5aU2uQJ14Q.woff2) format('woff2');
+}
+
+/*header styles */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-left: 10%;
+}
+
+.nav-links {
+    text-align: right;
+    background: #ff7eff;
+    padding: 10px 30px;
+    border-bottom-left-radius: 18px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li a:hover {
+    color: #000;
+}
+
+/* main styles */
+
+.right-col {
+    flex-basis: 55%;
+}
+
+.right-col h1 {
+    font-style: 55px;
+    font-weight: 600;
+}
+
+.right-col p {
+    color: #777;
+    margin: 20px 0 70px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/*flexbox */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.index_stuff {
+    background-color: rgb(253, 152, 255);
+    border: 15px solid rgb(255, 5, 226);
+    padding: 20px;
+    margin: 10px;
+}
+
+
+@media (max-width: 800px) {
+    .row {
+        flex-direction: row; 
+    }
+    .left-col {
+        flex-basis: 50%; 
+    }
+    .right-col {
+        flex-basis: 50%; 
+    }
+    
+}
+
+@media (min-width: 600px) {
+    .row {
+        flex-direction: row; 
+      
+    }
+    .left-col {
+        flex-basis: 50%; 
+    }
+    .right-col {
+        flex-basis: 50%; 
+    }
+}
+
+.left-col img {
+    cursor: pointer;
+    filter: grayscale(0);
+    transition: filter 1s;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links.active {
+        display: block;
+    }
+}
+
+@media (min-width: 760px) {
+    .nav-links {
+        display: block; 
+    }
+    .menu-toggle {
+        display: none; 
+    }
+}
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href = "styles.css" href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap">
+
+</head>
+</header>
+<body>
+    <div class="header">
+        <nav>
+            <a class="logo">Cassandra Salazar</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <svg id="menu-toggle" class = "menu-toggle" width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="#ff7eff" />
+                <line x1="30" y1="50" x2="70" y2="50" stroke="green" stroke-width="4" />
+                <line x1="30" y1="40" x2="70" y2="40" stroke="green" stroke-width="4" />
+                <line x1="30" y1="60" x2="70" y2="60" stroke="green" stroke-width="4" />
+            </svg>
+            
+        </nav>
+
+        <div class="row">
+            
+            <figure>
+            <div class="left-col">
+                <img src="profile1000.jpg" alt="Profile Picture" width="400" height="400" 
+                srcset="profile200.jpg 200w profile1000.jpg 1000w profile2000.jpg 2000w" 
+                sizes= " (min-width: 960px) 720px" class="profilePic"/>
+                <script src="script.js"></script>
+            
+            </div>
+
+           
+            </figure>
+            <div class="right-col">
+            <section>
+                <h1>My Web Portfolio</h1>
+                <hr>
+                <br>
+                <div> 
+                <h4 class = 'greeting' ></h4>
+                <script src="day.js"></script>
+                </div>
+                
+                <p>
+                    My name is Cassandra Salazar. My strengths include self-motivation, disciplined work ethic, and effective communication. I have grown up in a single-parent household with limited financial resources. I lacked a substantial support system, which compelled me to proactively seek out opportunities for personal growth and success. Through my determination, I have engaged in diverse educational programs and volunteered extensively. My accomplishments are a result of my own drive and commitment. I have an ability to remain disciplined, consistently demonstrating my dedication to task completion without procrastinating. I also excel in teamwork and effective communication, two important components for the success of any project or event. My collaborative skills ensure that I can work in a team, promoting an environment where ideas flourish and objectives are met. I am eager to apply my skills in computer science to real-world, collaborative projects. This strength, combined with my skill in communication, enhances my capacity to contribute meaningfully to any professional workplace. I also look forward to learning and enhancing my technical skills. Long-term, I aim to dismantle barriers and inspire underrepresented individuals to pursue careers in computer science.
+                </p>
+            </section>
+                <body>
+                <section>
+                <div class="wrapper">
+                    <div class = "a">
+                    <a href="https://www.linkedin.com/in/cassandra-salazar-8150a0276/" class="icon">
+                        <img src="linkedin.png" alt="LinkedIn" srcset = " linkedin.png 980w linkedin100.png 100w"  sizes= " (min-width: 360px) 120px" >
+                    </a>
+                    </div>
+                    
+                    <div class = "b">
+                    <a href="mailto:cs6560@nyu.edu" class="icon">
+                        <img src="email.png" alt="Email" srcset = "email.png 960w email100.png 100w" sizes= " (min-width: 360px) 120px">
+                    </a>
+                    </div>
+                </div>
+                </section>
+                </body>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
